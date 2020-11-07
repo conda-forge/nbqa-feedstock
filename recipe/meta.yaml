@@ -11,7 +11,7 @@ source:
   sha256: 3ac0a5819c60307627e3917c15ceea856c4008592c6c0348560423b387aac066
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - nbqa=nbqa.__main__:main
@@ -20,10 +20,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.6.1
   run:
-    - python >=3.6
+    - python >=3.6.1
     - toml
+    # Only required for [py<38] but always include so this can be noarch: python
+    - importlib_metadata
 
 test:
   imports:
