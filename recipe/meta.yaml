@@ -20,9 +20,9 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.6.1
   run:
-    - python >=3.6
+    - python >=3.6.1
     - toml
     - importlib_metadata # [py<38]
 
