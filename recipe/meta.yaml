@@ -23,6 +23,7 @@ requirements:
     - python >=3.6.1
   run:
     - python >=3.6.1
+    - ipython >=7.8.0
     - toml
     # Only required for [py<38] but always include so this can be noarch: python
     - importlib_metadata
