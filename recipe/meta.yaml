@@ -1,5 +1,5 @@
 {% set name = "nbqa" %}
-{% set version = "0.4.1" %}
+{% set version = "0.5.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bade438e7bd94d667c736168e1e3eee17298a76accbd65f549172a701a32a2e9
+  sha256: 4ff30880a062ca95d7a9a8b37724288789dd7cf3249b09cc1ac4fa697f5d80e6
 
 build:
   number: 0
@@ -23,6 +23,7 @@ requirements:
     - python >=3.6.1
   run:
     - python >=3.6.1
+    - ipython >=7.8.0
     - toml
     # Only required for [py<38] but always include so this can be noarch: python
     - importlib_metadata
