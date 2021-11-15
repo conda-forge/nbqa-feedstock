@@ -11,7 +11,7 @@ source:
   sha256: 0a1802b079354be003a62124c19d071c726b152a1d6974daf604aa4102d86a74
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - nbqa=nbqa.__main__:main
@@ -27,7 +27,7 @@ requirements:
     - tomli <2.0.0
     - tokenize-rt >=3.2.0
     # Only required for [py<38] but always include so this can be noarch: python
-    - importlib_metadata
+    - importlib-metadata
 
 test:
   imports:
