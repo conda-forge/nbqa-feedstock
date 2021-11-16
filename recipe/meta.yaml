@@ -26,7 +26,8 @@ requirements:
     - ipython >=7.8.0
     - tomli <2.0.0
     - tokenize-rt >=3.2.0
-    - importlib-metadata >=1.4 # [py<38]
+    # Only required for [py<38] but always include so this can be noarch: python
+    - importlib-metadata >=1.4
 
 test:
   imports:
