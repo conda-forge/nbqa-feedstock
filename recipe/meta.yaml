@@ -1,5 +1,5 @@
 {% set name = "nbqa" %}
-{% set version = "1.1.1" %}
+{% set version = "1.2.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0a1802b079354be003a62124c19d071c726b152a1d6974daf604aa4102d86a74
+  sha256: 5f60dfd9d24f345daab90d6cbab52a6bf20d28b8a4d1fd5fbb076f3bfdb0ef2b
 
 build:
   number: 0
