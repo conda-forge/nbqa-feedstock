@@ -1,11 +1,11 @@
-About nbqa
-==========
+About nbqa-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nbqa-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/nbQA-dev/nbQA
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nbqa-feedstock/blob/main/LICENSE.txt)
 
 Summary: Run any Python code quality tool on a Jupyter Notebook!
 
