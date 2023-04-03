@@ -1,5 +1,5 @@
 {% set name = "nbqa" %}
-{% set version = "1.6.4" %}
+{% set version = "1.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1fbcbe37ef530495bd7f08e53bb838a869b074a0fbef5785ed270d370a613eb0
+  sha256: 117112ad6d618ff13afc5ba41ca0ff21c23f084a6df7875fb04b7f2c01a136c4
 
 build:
   number: 0
@@ -22,6 +22,7 @@ requirements:
     - python >=3.8.0
   run:
     - python >=3.8.0
+    - autopep8 >=1.5
     - ipython >=7.8.0
     - tomli
     - tokenize-rt >=3.2.0
