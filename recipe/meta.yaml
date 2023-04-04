@@ -10,7 +10,7 @@ source:
   sha256: 117112ad6d618ff13afc5ba41ca0ff21c23f084a6df7875fb04b7f2c01a136c4
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - nbqa=nbqa.__main__:main
