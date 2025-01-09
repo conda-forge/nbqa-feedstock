@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 48c0acd83675bd6d086efba3885e1137d9475c0da328c74f46b9acbc664fe36f
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - nbqa=nbqa.__main__:main
@@ -19,9 +19,9 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8.0
+    - python {{ python_min }}
   run:
-    - python >=3.8.0
+    - python >={{ python_min }}
     - autopep8 >=1.5
     - ipython >=7.8.0
     - tomli
@@ -37,6 +37,7 @@ test:
     - nbqa --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/nbQA-dev/nbQA
