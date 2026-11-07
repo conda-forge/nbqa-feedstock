@@ -1,15 +1,15 @@
 schema_version: 1
 
 context:
-  version: 1.9.1
+  version: "1.10.0"
 
 package:
   name: nbqa
   version: ${{ version }}
 
 source:
-- url: https://files.pythonhosted.org/packages/source/n/nbqa/nbqa-${{ version }}.tar.gz
-  sha256: a1f4bcf587c597302fed295951001fc4e1be4ce0e77e1ab1b25ac2fbe3db0cdd
+  - url: https://files.pythonhosted.org/packages/source/n/nbqa/nbqa-${{ version }}.tar.gz
+    sha256: c39a6213ac98a3f2b298d81eef85337e6de7591b265d8f8585a52df5b09323a8
 
 build:
   number: 0
